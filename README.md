@@ -1,4 +1,4 @@
-# lab-dw-2017-1
+# IMC-site
 Laboratório de Desenvolvimento de Software para a Web de 2017/1.
 
 ## Obtendo o projeto
