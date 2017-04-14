@@ -10,7 +10,7 @@
     <link href='//fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
     <script src="exemplo-javascript.js"></script>
 
-        
+
 </head>
 
 
@@ -26,19 +26,15 @@
             font-family: 'Philosopher';
             font-size: 16px;
         }
-        img {
-            position: absolute;
-            margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 250px;
-            border-radius: 40%;
+        .lower{
+            top: 100px;
+        }
+        #my_table {
+            margin-top: 305px;
         }
     </style>
 
-    <img src="imc-formula.JPG" alt="IMC FORMULA IMG.JPG">
+    
     <div class="col-md-12">
         <div class="modal-dialog" style="margin-bottom:0">
             <div class="modal-content">
@@ -56,19 +52,73 @@
                                 <label for="peso">Peso:</label>
                                 <input class="form-control" placeholder="Peso" name="peso" type="text">
                             </div>
-                            <div class= "form-group">
+                            <div class="form-group">
                                 <label for="sex">Sexo:</label>
-                                <select id ="sex" class="form-control">
+                                <select id="sex" class="form-control">
                                     <option value="one">Masculino</option>
                                     <option value="two">Ferminio</option>
                                 </select>
-                                </div>
-                                <button class="btn btn-sm btn-success" id=br onclick="calcular()">Calcular IMC</button>
-                    </fieldset>
+                            </div>
+                            <button class="btn btn-sm btn-success" id=br onclick="calcular()">Calcular IMC</button>
+                        </fieldset>
                     </form>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container col-md-6" style="float:left">
+        <h2>Como funciona o calculo de IMC?</h2>
+        <p>Primeiro é feito o calculo de acordo com a imagem a baixo:</p>
+        <img src="imc-formula.JPG" alt="IMC FORMULA IMG.JPG">
+        <p>Depois a partir das informaçoes obtidas, dizemos a atual situação do seu peso, baseado nas tabelas abaixo:</p>
+        <h3>Caso Masculino:</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Situação</th>
+                    <th>Peso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abaixo do peso</td>
+                    <td>Abaixo de 20.00 IMC</td>
+                </tr>
+                <tr>
+                    <td>Peso Normal</td>
+                    <td>Acima de 20.00 e abaixo de 26.40 IMC</td>
+                </tr>
+                <tr>
+                    <td>Acima do peso</td>
+                    <td>Acima de 26.40 IMC</td>
+                </tr>
+            </tbody>
+       </table>
+    </div>
+    <div class="container col-md-6">
+        <h3 id="my_table">Caso Feminino:</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Situação</th>
+                    <th>Peso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abaixo do peso</td>
+                    <td>Abaixo de 19.1 IMC</td>
+                </tr>
+                <tr>
+                    <td>Peso Normal</td>
+                    <td>Acima de 19.1 e abaixo de 25.8 IMC</td>
+                </tr>
+                <tr>
+                    <td>Acima do peso</td>
+                    <td>Acima de 25.8 IMC</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
