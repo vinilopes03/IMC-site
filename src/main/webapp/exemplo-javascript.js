@@ -2,8 +2,8 @@
 
 function calcular() {
 
-    var high = document.formulario.altura.value.replace(",",".").replace("m".toLowerCase(), " ");
-    var peso = document.formulario.peso.value.replace(",",".").replace("kg".toLowerCase()," ");
+    var high = document.formulario.altura.value.replace(",", ".").replace("m".toLowerCase(), " ");
+    var peso = document.formulario.peso.value.replace(",", ".").replace("kg".toLowerCase(), " ");
     var op = document.formulario.sex.value;
 
     var imc = peso / (Math.pow(high, 2));
@@ -20,7 +20,7 @@ function calcular() {
         }
 
     }
-    else if (op =="two") {
+    else if (op == "two") {
         if (imc < 19.1) {
             alert("IMC: " + imc.toFixed(2) + "\nAbaixo do Peso");
         }
