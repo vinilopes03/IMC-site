@@ -1,5 +1,5 @@
 # IMC-site
-Laboratório de Desenvolvimento de Software para a Web de 2017/1.
+Calculadora de IMC
 
 ## Obtendo o projeto
 
