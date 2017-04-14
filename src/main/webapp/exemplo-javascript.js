@@ -2,7 +2,7 @@
 
 function calcular() {
 
-    var high = document.formulario.altura.value.replace(",",".");
+    var high = document.formulario.altura.value.replace(",",".").replace("m".toLowerCase(), " ");
     var peso = document.formulario.peso.value.replace(",",".").replace("kg".toLowerCase()," ");
     var op = document.formulario.sex.value;
 
